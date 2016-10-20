@@ -9,6 +9,7 @@ projects[] = drupal
 ; Projects
 ; --------
 
+projects[] = m4032404
 projects[] = admin_toolbar
 projects[] = adminimal_theme
 projects[] = adminimal_admin_toolbar
