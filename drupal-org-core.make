@@ -18,9 +18,13 @@ projects[] = backup_migrate
 projects[] = better_exposed_filters
 projects[] = ctools
 projects[] = devel
+projects[] = editor_advanced_link
+projects[] = eck
 projects[] = field_group
 projects[] = field_tools
 projects[] = google_analytics
+projects[] = inline_entity_form
+projects[] = linkit
 projects[] = menu_admin_per_menu
 projects[] = menu_block
 projects[] = metatag
@@ -31,8 +35,10 @@ projects[] = rename_admin_paths
 projects[] = role_delegation
 projects[] = sitemap
 projects[] = smart_trim
+projects[] = soundcloudfield
 projects[] = stage_file_proxy
 projects[] = token
+projects[] = video_embed_field
 projects[] = xmlsitemap
 
 ; Custom modules
