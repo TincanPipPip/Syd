@@ -43,10 +43,10 @@ projects[] = xmlsitemap
 
 ; Custom modules
 ; --------
-;projects[syd_tweaks][type] = "module" 
-;projects[syd_tweaks][download][type] = "git" 
-;projects[syd_tweaks][download][url] = "https://github.com/TincanPipPip/syd_tweaks.git" 
-;projects[syd_tweaks][subdir] = "custom"
+projects[syd_tweaks][type] = "module" 
+projects[syd_tweaks][download][type] = "git" 
+projects[syd_tweaks][download][url] = "https://github.com/TincanPipPip/syd_tweaks_8.git" 
+projects[syd_tweaks][subdir] = "custom"
 
 ; Profiles
 ; --------
