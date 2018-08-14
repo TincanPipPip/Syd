@@ -62,7 +62,8 @@ projects[syd_profile][destination] = "profiles"
 ; --------
 projects[pippip][type] = "theme"
 projects[pippip][download][type] = "git"
-projects[pippip][download][url] = "https://github.com/TincanPipPip/pippip-8.git"
+projects[pippip][download][url] = "https://github.com/TincanPipPip/Pippip-v2.git"
+projects[pippip][download][branch] = "d8"
 projects[pippip][subdir] = ""
 projects[pippip][destination] = "themes"
 
