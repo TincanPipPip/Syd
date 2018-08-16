@@ -46,6 +46,7 @@ projects[] = dropzonejs
 projects[] = twig_tweak
 projects[] = entity_browser
 projects[] = file_browser
+projects[] = structure_sync
 
 ; Custom modules
 ; --------
