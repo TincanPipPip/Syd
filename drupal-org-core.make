@@ -42,6 +42,10 @@ projects[] = stage_file_proxy
 projects[] = token
 projects[] = video_embed_field
 projects[] = xmlsitemap
+projects[] = dropzonejs
+projects[] = twig_tweak
+projects[] = entity_browser
+projects[] = file_browser
 
 ; Custom modules
 ; --------
