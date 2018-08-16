@@ -44,9 +44,25 @@ projects[] = video_embed_field
 projects[] = xmlsitemap
 projects[] = dropzonejs
 projects[] = twig_tweak
+projects[] = embed
 projects[] = entity_browser
+projects[] = entity_embed
 projects[] = file_browser
 projects[] = structure_sync
+
+
+libraries[dropzonejs][download][type] = git
+libraries[dropzonejs][download][url] = https://github.com/enyo/dropzone.git
+libraries[dropzonejs][directory_name] = dropzone
+
+libraries[imagesloaded][download][type] = git
+libraries[imagesloaded][download][url] = https://github.com/desandro/imagesloaded.git
+libraries[imagesloaded][directory_name] = imagesloaded
+
+libraries[masonry][download][type] = git
+libraries[masonry][download][url] = https://github.com/desandro/masonry.git
+libraries[masonry][directory_name] = masonry
+
 
 ; Custom modules
 ; --------
