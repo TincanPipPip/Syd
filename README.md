@@ -114,6 +114,8 @@ This is a default set of entities used for dynamic page layouts & structures. In
 - stage_file_proxy
   - **Note:** Should only be enabled/used on your local environment. Once installed go to the configuration page and enter the live/dev site url. It will then load images & files from that environment so you don&#39;t have to manually sync the &#39;files&#39; folder to work on local with full images etc
 - structure_sync
+- [syd_tweaks](https://github.com/TincanPipPip/syd_tweaks_8)
+- [syd_profile](https://github.com/TincanPipPip/syd_profile_8)
 - token
 - twig_tweak
 - video_embed_field
