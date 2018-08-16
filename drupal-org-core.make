@@ -9,10 +9,9 @@ projects[] = drupal
 ; Projects
 ; --------
 
-projects[] = m4032404
 projects[] = admin_toolbar
-projects[] = adminimal_theme
 projects[] = adminimal_admin_toolbar
+projects[] = adminimal_theme
 projects[] = administerusersbyrole
 projects[] = backup_migrate
 projects[] = better_exposed_filters
@@ -20,13 +19,19 @@ projects[] = config_filter
 projects[] = config_ignore
 projects[] = ctools
 projects[] = devel
-projects[] = editor_advanced_link
+projects[] = dropzonejs
 projects[] = eck
+projects[] = editor_advanced_link
+projects[] = embed
+projects[] = entity_browser
+projects[] = entity_embed
 projects[] = field_group
 projects[] = field_tools
+projects[] = file_browser
 projects[] = google_analytics
 projects[] = inline_entity_form
 projects[] = linkit
+projects[] = m4032404
 projects[] = menu_admin_per_menu
 projects[] = menu_block
 projects[] = metatag
@@ -39,16 +44,11 @@ projects[] = sitemap
 projects[] = smart_trim
 projects[] = soundcloudfield
 projects[] = stage_file_proxy
+projects[] = structure_sync
 projects[] = token
+projects[] = twig_tweak
 projects[] = video_embed_field
 projects[] = xmlsitemap
-projects[] = dropzonejs
-projects[] = twig_tweak
-projects[] = embed
-projects[] = entity_browser
-projects[] = entity_embed
-projects[] = file_browser
-projects[] = structure_sync
 
 
 libraries[dropzonejs][download][type] = git
