@@ -49,7 +49,7 @@
 ### Installation
 
 - Setup local AMP stack, pointing to local root folder (if hosted on Acquia, the DocumentRoot will be `/--root--/docroot`)
-- From root folder, run `git clone https://github.com/TincanPipPip/syd_make_8.git .`
+- From DocumentRoot folder, run `git clone https://github.com/TincanPipPip/syd_make_8.git .`
 - Run `drush make drupal-org-core.make`
 - Once complete, create `settings.php` file as normal
 - Install Drupal as normal
