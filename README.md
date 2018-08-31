@@ -59,6 +59,7 @@ git clone https://github.com/TincanPipPip/syd_make_8.git docroot
 - Run the following install the make file
 
 ```cmd
+cd docroot
 drush make syd8.make -y
 ```
 
@@ -78,6 +79,25 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 ```
 
 - Install Drupal as normal, ensuring you use a strong password, and save the login details to [TClients](https://tclients.tincan.co.uk/)
+
+- **Publish to Acquia** Note: in development sites should all be run from the prod environment to preserve content & uploaded files
+
+  - Create a new project on Acquia Cloud
+  - From your local Drupal root, run
+
+  ```cmd
+  drush archive-dump --tar-options="--exclude=themes/pippip/node_modules --exclude=sites/default/files" --destination=../mysite.tar.gz
+  ```
+
+  - Upload to `mysite.tar.gz` to Dropbox/alternative (so there is a publically available url for the file)
+  - In the Acquia project environment, select `Install Drupal`, then `Import from URL`, pasting in the public link to the achrive.
+  - **Temporary due to current Acquia setup**
+    - get the git repo url from Acquia
+    - delete all files/folders from your `site-root` directory
+    - run
+    ```cmd
+    git clone <acquia-reop-url> .
+    ```
 
 - Create `/docroot/sites/default/settings.local.php`, and paste the following inside (adding your local DB details, and ensuring you get the hash_salt value from settings.php)
 
@@ -114,27 +134,16 @@ ini_set('error_reporting', E_ERROR);
 drush cr
 ```
 
-- From the `docroot` folder, run:
+- From the site root folder, add the following entries to `.gitignore`
 
 ```cmd
-touch .gitignore & echo "sites/default/settings.local.php" >> .gitignore
+docroot/sites/default/settings.local.php
+node_modules
+.DS_Store
+.vscode
 ```
 
-- Follow [Pippip](https://github.com/TincanPipPip/Pippip-v2#setup) setup instructions
-
-### Publish to Acquia
-
-**Note: in development sites should all be run from the prod environment to preserve content & uploaded files**
-
-- Create a new project on Acquia Cloud
-- From the Drupal root, run
-
-```cmd
-drush archive-dump --destination=../mysite.tar.gz
-```
-
-- Upload to `mysite.tar.gz` to Dropbox/alternative (so there is a publically available url for the file)
-- In the Acquia project environment, select `Install Drupal`, then `Import from URL`, pasting in the public link to the achrive.
+- (Optional) Follow [Pippip](https://github.com/TincanPipPip/Pippip-v2#setup) setup instructions
 
 ## Included themes
 
@@ -216,6 +225,8 @@ This is a default set of entities used for dynamic page layouts & structures. In
     - twig_tweak
   - Updated & moved documentation to Github
 
+#### To be implemented to Wiki
+
 Building the site
 
 Depending on the use case decide which additional modules you’ll need, which are not part of SYD and install and enable them
@@ -256,23 +267,11 @@ Example: {{ drupal_block(‘sidebar’) }}
 Enabling XML sitemap
 Enable XML sitemap for every CT individually (D8 defaults all CTs as excluded) through the XML module settings.
 Exclude the 404 page from the node settings when editing the page.
-Linkit/ Paste with word need some settings added to it but it’s a useful module to have.
-Example of Linkit module setting here
-Once that’s done the CKEditor need to be configured to use the newly created linkit profile (admin/config/content/formats/manage/full_html)
-Also we usually add the Paste with Word option to the CKEditor too
-Create any basic TWIG node templates (just outputting the fields needed - almost no HTML)
-At the end (before handing the project to the designer) add permission as they usually are quite specific, kept in config and for better consistency it is good adding them at the end.
 
 Metatag setup (usually standard for all sites and applicable to all CTs)
 I usually set the body field and image field of every CT as mandatory so we are sure there will be content to display if the page is shared anywhere. Sometimes this information is not shown on the front end but it’s important to be there (because of the Social Media & SEO).
 Set up path aliases for all the CTs, usually they follow the menu structure but for all Event pages or Blog pages, for example, we set up custom ones. Also, for pages like these (with a custom aliases) we create menu rules using the menu_position module.
 
-Setting up export/import functionality
-Create a local.settings.php file in the default folder where the settings.php is (template here)
-Change the details of it - DBNAME, USERNAME, PASSWORD, HASHSALT_MUST_BE_COPIED_FROM_THE_SETTINGS.PHP
-All settings.php have one unique hash salt code. (just look up for ‘hash_salt’ in the settings.php)
-Create a config folder (if not already there) on the same level where docroot is (your_new_site/config)
-Export the config. There is a document for this workflow here.
 Config management
 Almost everything is treated as config in D8 except:
 Block content
@@ -281,13 +280,6 @@ Menu items
 Shortcut links in the admin toolbar,
 The on/off option for putting the site under maintenance mode (/admin/config/development/maintenance)
 Users
-
-Differences between D7 and D8
-For theming instead of using pure PHP as in D7, D8 is using TWIG, which is a PHP template engine, using slightly different syntax compared to pure PHP and it’s simpler once you get used with it.
-Display modes are part of core. They allow you to create different display modes for CTs, media entities and almost everything using the UI.
-Disabling modules in D8 is possible only through Drush. When in the /docroot directory, if you want to disable a module execute drush pm-uninstall module_name
-Similarly if you want to download and enable modules via the terminal, for downloading modules use drush dl module_name
-For enabling an existing module use drush pm-enable module_name
 
 Some limitations and challenling D8 modules to work with (by 20th June 2018)
 Date range - currently part of core but still not working properly
@@ -303,12 +295,13 @@ Also a different version is used so that the block doesn’t appear as missing w
 
 Some useful modules
 twig_tweak - helps in embedding blocks, views etc. within a page. At this point this is the workaround which replaces the use of panels. It also possible to embed views and pass contextual filters by providing a third argument in the drupal_view() function (see the link below). https://www.wdtutorials.com/drupal/theming/how-to-use-twig-tweak-module/#.Wyo5NnUrJhE
+
 lsinf_view_filter (Live theatre version) - it is a custom module we use to make the date range working. To get the filter working, first enable the module, create a view which is listing Event nodes (not performances as usually on What’s on) add the filter in views using the (field_run_date:end date as usually the event date on Events is a date range) and save it as exposed filter. Go back to the filter and choose the right option - usually the operator ‘In past including’ and leave the drop down empty (-Any-). Save.
 
 Other notes:
 When creating entities don’t use the word ‘cast’ as a machine name because it breaks the site. I haven’t researched this much in depth but I guess it might be related with the fact that the word ‘cast’ used in code means something and can be interpreted by the system as not just a simple word.
 Usually we keep all the view modes of a CT template in one file using the logic to check which view mode is used ({% if view_mode == "teaser" %} … {% endif %})
-Better exposed filters allow overriding the exposed filters label from the views better exposed filter settings on the views UI (it’s not done in code as it is in D7)
+Better exposed filters allow overriding the exposed filters label from the views better exposed filter settings on the views UI
 
 Glossary:
 CT/s - content type/s
@@ -319,5 +312,3 @@ TWIG/Drupal.org
 Object orientation
 Config management and workflow vs GIT (JD’s doc)
 Test site examples
-
-Dummy project and code review
