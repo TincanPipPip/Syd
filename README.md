@@ -20,3 +20,5 @@ See [Wiki](https://github.com/TincanPipPip/syd_make_8/wiki/Installation)
     - structure_sync
     - twig_tweak
   - Updated & moved documentation to Github
+- 2018-08-31
+  - Moved docs to [Wiki](https://github.com/TincanPipPip/syd_make_8/wiki)
