@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 ## 2018-08-16
 ### Added
-  - Changed defualt theme to [Pippip v2](https://github.com/TincanPipPip/Pippip-v2)
+  - Changed default theme to [Pippip v2](https://github.com/TincanPipPip/Pippip-v2)
   - Added following modules & config:
     - embed
     - entity_browser
