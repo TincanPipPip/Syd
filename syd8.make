@@ -16,6 +16,7 @@ projects[] = administerusersbyrole
 projects[] = backup_migrate
 projects[] = better_exposed_filters
 projects[] = block_content_permissions
+projects[] = block_region_permissions
 projects[] = config_filter
 projects[] = config_ignore
 projects[] = ctools
