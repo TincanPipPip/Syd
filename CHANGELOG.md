@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file.
 ### Added
   - Added following modules & config:
     - block_content_permissions
+    - block_region_permissions
     - menu_block_title
   - Added
     - 'General' block type
@@ -32,3 +33,10 @@ All notable changes to this project will be documented in this file.
     - Image browser set to 'open' by default
   - Enabled
     - 'Admin toolbar links access filter'
+
+## 2018-12-14
+### Added
+  - Added following modules & config:
+    - imageapi_optimize
+    - imageapi_optimize_resmushit
+  - Configured 'emergency message' block type
