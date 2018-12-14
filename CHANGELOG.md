@@ -41,3 +41,6 @@ All notable changes to this project will be documented in this file.
     - imageapi_optimize_resmushit
   - Updated
     - Page CT teaser - use smart_trim
+  - Added
+    - Emergency message setup (see block--block-content.html.twig & page.html.twig for usage)
+    - Banner image srcset image styles
