@@ -39,4 +39,5 @@ All notable changes to this project will be documented in this file.
   - Added following modules & config:
     - imageapi_optimize
     - imageapi_optimize_resmushit
-  - Configured 'emergency message' block type
+  - Updated
+    - Page CT teaser - use smart_trim
