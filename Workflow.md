@@ -21,7 +21,7 @@
 	- Create new feature branch based off latest 'master' branch (see naming conventions above)
 	- Set 'Dev' env to run from feature branch
 	- Work on local machine
-	- When pushing form local to 'Dev' env, `git pull` and import config first to check for other changes/conflicts
+	- When pushing form local to 'Dev' env, `git pull` and import config **first** to check for other changes/conflicts
 	- Once pushed, always import config on 'Dev' immediately
 
 4. Promoting new work to Production
