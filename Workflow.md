@@ -32,3 +32,10 @@
 	-	Once happy, tag master branch and assign to 'Prod' env
 	-	Import config on 'Prod', check thoroughly
 	-	Clear varnish cache in Acquia
+
+## Notes
+- When using Drush on Acquia over SSH, you must set the application & environment like so: 
+```
+drush exampleapp.dev cr
+drush exampleapp.prod cim vcs
+```
