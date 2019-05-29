@@ -36,6 +36,6 @@
 ## Notes
 - When using Drush on Acquia over SSH, you must set the application & environment like so: 
 ```
-drush exampleapp.dev cr
-drush exampleapp.prod cim vcs
+drush @exampleapp.dev cr
+drush @exampleapp.prod cim vcs
 ```
