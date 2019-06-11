@@ -32,6 +32,7 @@
 	-	Once happy, tag master branch and assign to 'Prod' env
 	-	Import config on 'Prod', check thoroughly
 	-	Clear varnish cache in Acquia
+	-	Return dev/stage to original dev/stage branches, ensuring they are all merged from master branch
 
 ## Notes
 - When using Drush on Acquia over SSH, you must set the application & environment like so: 
