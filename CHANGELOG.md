@@ -44,3 +44,13 @@ All notable changes to this project will be documented in this file.
   - Added
     - Emergency message setup (see block--block-content.html.twig & page.html.twig for usage)
     - Banner image srcset image styles
+    
+## 2019-07-15
+### Added
+  - Added following modules & config:
+    - block_permissions
+    - anchor_link
+  - Updated
+    - CKEditor buttons to include anchor links
+  - Added
+    - Accordion ECK entity & associated bundles
