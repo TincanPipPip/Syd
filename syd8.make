@@ -15,6 +15,7 @@ projects[] = adminimal_theme
 projects[] = administerusersbyrole
 projects[] = backup_migrate
 projects[] = better_exposed_filters
+projects[] = block_permissions
 projects[] = block_content_permissions
 projects[] = block_region_permissions
 projects[] = config_filter
