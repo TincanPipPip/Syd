@@ -13,6 +13,7 @@ projects[] = admin_toolbar
 projects[] = adminimal_admin_toolbar
 projects[] = adminimal_theme
 projects[] = administerusersbyrole
+projects[] = anchor_link
 projects[] = backup_migrate
 projects[] = better_exposed_filters
 projects[] = block_permissions
