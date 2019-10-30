@@ -99,5 +99,5 @@ defaults[projects][subdir] = "contrib"
 
 ; Patches
 ; --------
-projects[drupal][patch][] = "https://www.drupal.org/files/issues/2018-09-17/2999737-10_1.patch"
+projects[][patch][] = "https://www.drupal.org/files/issues/2018-09-17/2999737-10_1.patch"
 projects[publishcontent][patch][] = "https://www.drupal.org/files/issues/publishcontent_edit_operation_is-2843403-2.patch"
