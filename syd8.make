@@ -47,7 +47,6 @@ projects[] = publishcontent
 projects[] = redirect
 projects[] = rename_admin_paths
 projects[] = roleassign
-projects[] = sitemap
 projects[] = smart_trim
 projects[] = soundcloudfield
 projects[] = stage_file_proxy
@@ -55,6 +54,7 @@ projects[] = structure_sync
 projects[] = token
 projects[] = twig_tweak
 projects[] = video_embed_field
+projects[] = viewsreference
 projects[] = xmlsitemap
 
 
@@ -96,3 +96,7 @@ projects[pippip][subdir] = ""
 projects[pippip][destination] = "themes"
 
 defaults[projects][subdir] = "contrib"
+
+; Patches
+; --------
+projects[nodequeue][patch][] = "https://www.drupal.org/files/issues/publishcontent_edit_operation_is-2843403-2.patch"
