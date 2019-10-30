@@ -91,7 +91,6 @@ projects[syd_profile][destination] = "profiles"
 projects[pippip][type] = "theme"
 projects[pippip][download][type] = "git"
 projects[pippip][download][url] = "https://github.com/TincanPipPip/Pippip-v2.git"
-projects[pippip][download][branch] = "d8"
 projects[pippip][subdir] = ""
 projects[pippip][destination] = "themes"
 
@@ -99,5 +98,5 @@ defaults[projects][subdir] = "contrib"
 
 ; Patches
 ; --------
-projects[][patch][] = "https://www.drupal.org/files/issues/2018-09-17/2999737-10_1.patch"
+projects[drupal][patch][] = "https://www.drupal.org/files/issues/2018-09-17/2999737-10_1.patch"
 projects[publishcontent][patch][] = "https://www.drupal.org/files/issues/publishcontent_edit_operation_is-2843403-2.patch"
