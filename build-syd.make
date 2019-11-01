@@ -75,14 +75,14 @@ libraries[masonry][directory_name] = masonry
 ; --------
 projects[syd_tweaks][type] = "module" 
 projects[syd_tweaks][download][type] = "git" 
-projects[syd_tweaks][download][url] = "https://github.com/TincanPipPip/syd_tweaks_8.git" 
+projects[syd_tweaks][download][url] = "https://github.com/TincanPipPip/Syd-Tweaks.git" 
 projects[syd_tweaks][subdir] = "custom"
 
 ; Profiles
 ; --------
 projects[syd_profile][type] = "profile"
 projects[syd_profile][download][type] = "git"
-projects[syd_profile][download][url] = "https://github.com/TincanPipPip/syd_profile_8.git"
+projects[syd_profile][download][url] = "https://github.com/TincanPipPip/Syd-Profile.git"
 projects[syd_profile][subdir] = ""
 projects[syd_profile][destination] = "profiles"
 
@@ -90,7 +90,7 @@ projects[syd_profile][destination] = "profiles"
 ; --------
 projects[pippip][type] = "theme"
 projects[pippip][download][type] = "git"
-projects[pippip][download][url] = "https://github.com/TincanPipPip/Pippip-v2.git"
+projects[pippip][download][url] = "https://github.com/TincanPipPip/Pippip.git"
 projects[pippip][subdir] = ""
 projects[pippip][destination] = "themes"
 
