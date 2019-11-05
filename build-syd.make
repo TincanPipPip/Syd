@@ -54,6 +54,7 @@ projects[] = structure_sync
 projects[] = token
 projects[] = twig_tweak
 projects[] = video_embed_field
+projects[] = view_unpublished
 projects[] = viewsreference
 projects[] = xmlsitemap
 
