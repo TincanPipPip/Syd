@@ -5,7 +5,7 @@
 	-  Git Tags: `YYYY-MM-DD--[succinct description]`
 	- Feature branches:
 		- If working from a single ticket: `dev-[JIRA/Mantis ticket ID]-[succinct description]`
-		- If working from multiple tickets: `dev-YYYY-MM-[succinct description]`
+		- If working from multiple tickets: `dev-[succinct description]`
 		
 2.  New projects
 	- Work on ‘Production’ environment
@@ -24,7 +24,11 @@
 	- When pushing form local to 'Dev' env, `git pull` and import config **first** to check for other changes/conflicts
 	- Once pushed, always import config on 'Dev' immediately
 
-4. Promoting new work to Production
+3.1. Client feedback/signoff
+	- Once internally tested & signed off on 'Dev' env, merge feature branch to `test` branch and deploy to 'Stage' env
+	- Update JIRA ticket with correct 'Stage' urls and assign to PM/Client
+
+3.2. Promoting new work to Production
 	-	Once new work is signed off for production, merge feature branch to 'dev' branch, set 'Dev' env to run from 'dev' branch, check thoroughly
 	-	Once happy, merge 'dev' to 'master' branch
 	-	Clone DB from 'Prod' to 'Stage' env
@@ -32,7 +36,7 @@
 	-	Once happy, tag master branch and assign to 'Prod' env
 	-	Import config on 'Prod', check thoroughly
 	-	Clear varnish cache in Acquia
-	-	Return dev/stage to original dev/stage branches, ensuring they are all merged from master branch
+	-	Return dev/stage to original dev/master branches, ensuring they are all merged from master branch
 
 ## Notes
 - When using Drush on Acquia over SSH, you must set the application & environment like so: 
