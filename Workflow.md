@@ -6,7 +6,7 @@
 	-  Git Tags: `YYYY-MM-DD--[succinct description]`
 	- Feature branches:
 		- If working from a single ticket: `dev-[JIRA ticket ID]`
-		- If working from multiple tickets: `dev-[succinct description]`
+		- If working from multiple tickets: `dev-[JIRA Epic ID]`
 		
 2.  New projects
 	- Work on ‘Production’ environment
