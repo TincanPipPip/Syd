@@ -1,4 +1,5 @@
 
+
 # Dev Workflow
 
 1.  Naming conventions
@@ -24,14 +25,14 @@
 	- When pushing form local to 'Dev' env, `git pull` and import config **first** to check for other changes/conflicts
 	- Once pushed, always import config on 'Dev' immediately
 
-3.1. Client feedback/signoff
+	3.1. Client feedback/signoff
 	- Once internally tested & signed off on 'Dev' env:
 	- Clone DB from 'Prod' to 'Stage' env
 	- Merge feature branch to `master` branch and deploy to 'Stage' env
 	- Import config & test for any conflicts/issues
-	- Update JIRA ticket with correct 'Stage' urls and assign to PM/Client
+		- Update JIRA ticket with correct 'Stage' urls and assign to PM/Client
 
-3.2. Promoting new work to Production
+	3.2. Promoting new work to Production
 	- Once new work is signed off for production:
 	- Tag master branch and assign to 'Prod' env
 	- Import config on 'Prod', check thoroughly
