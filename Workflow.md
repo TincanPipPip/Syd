@@ -5,7 +5,7 @@
 1.  Naming conventions
 	-  Git Tags: `YYYY-MM-DD--[succinct description]`
 	- Feature branches:
-		- If working from a single ticket: `dev-[JIRA/Mantis ticket ID]-[succinct description]`
+		- If working from a single ticket: `dev-[JIRA ticket ID]`
 		- If working from multiple tickets: `dev-[succinct description]`
 		
 2.  New projects
