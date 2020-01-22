@@ -3,10 +3,10 @@
 # Dev Workflow
 
 1.  Naming conventions
-	-  Git Tags: `YYYY-MM-DD--[succinct description]`
+	-  Git Tags: `YYYY-MM-DD--[JIRA ticket ID // succient description]`
 	- Feature branches:
-		- If working from a single ticket: `dev-[JIRA ticket ID]`
-		- If working from multiple tickets: `dev-[JIRA Epic ID]`
+		- If working from a single ticket: `[JIRA ticket ID]`
+		- If working from multiple tickets: `[JIRA Epic ID]`
 		
 2.  New projects
 	- Work on ‘Production’ environment
